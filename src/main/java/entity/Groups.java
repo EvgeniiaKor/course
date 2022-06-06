@@ -13,16 +13,10 @@ import lombok.Setter;
 @NoArgsConstructor
 
 public class Groups {
-    @Id
-    @Column(name = "id", nullable = false)
-    private Long id;
-
-    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     private String groupName;
     private boolean openGroup;
     private Alphinist[] alphinists;
-    @ManyToOne
-    @JoinColumn(name = "mountain_ID")
+
     private Mountain mountain;
 
     public  Groups (boolean openGroup, Mountain mountain, Alphinist[] alphinists){

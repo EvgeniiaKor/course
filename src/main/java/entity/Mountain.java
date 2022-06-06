@@ -8,7 +8,6 @@ import lombok.*;
 @Getter
 @Setter
 @NonNull
-
 public class Mountain {
 
     @Column(unique = true)
