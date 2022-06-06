@@ -26,7 +26,6 @@ public class Application {
         groupList2.addAlpinist(alpinists4, alpinists5);
         groupList3.addAlpinist(alpinists6, alpinists7);
 
-        System.out.println(groupList1);
     }
 }
 
